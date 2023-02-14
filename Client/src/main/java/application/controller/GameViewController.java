@@ -54,7 +54,7 @@ public class GameViewController extends WindowController implements Observer {
         buttons[2][1] = button21;
         buttons[2][2] = button22;
 
-        versusText.setText(service.getCurrent().getName() + " (" + service.getCurrent().getSymbol() + ") VS "
+        versusText.setText("You (" + service.getCurrent().getSymbol() + ") VS "
                 + service.getAdversary().getName() + " (" + service.getAdversary().getSymbol() + ")");
 
         for (int i = 0; i < 3; ++i) {
@@ -142,6 +142,7 @@ public class GameViewController extends WindowController implements Observer {
                         throw new RuntimeException(e);
                     }
                     backButton.setVisible(true);
+                    stage.requestFocus();
                 }
             }
         });
