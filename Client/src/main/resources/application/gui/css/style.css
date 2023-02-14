@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.root {
+    -fx-font-family: 'Barlow', cursive;
+    -fx-back-color: #fafafa;
+    -fx-default-text: #111;
+
+    -fx-white-color: #fff;
+    -fx-red-color: #d00;
+    -fx-gray-color: #333;
+    -fx-blue-color: #25b;
+    -fx-green-color: #2b5;
+    -fx-orange-color: #d40;
+
+    -fx-hyperlink-color: #6af;
+    -fx-shadow-color: rgba(0, 0, 0, 0.5);
+    -fx-blue-button: linear-gradient(to bottom right, #77f, #55d);
+    -fx-blue-button-active: linear-gradient(to bottom right, #99f, #77d);
+    -fx-green-button: linear-gradient(to bottom right, #0d5, #0b3);
+    -fx-green-button-active: linear-gradient(to bottom right, #0d7, #0b5);
+}
+
+.title {
+    -fx-font-family: 'Righteous', cursive;
+    -fx-text-fill: -fx-default-text;
+    -fx-font-size: 80px;
+}
+
+.background {
+    -fx-background-color: -fx-back-color;
+}
+
+.connect-button {
+    -fx-font-size: 30px;
+    -fx-font-family: 'Righteous', cursive;
+    -fx-text-fill: -fx-white-color;
+    -fx-font-weight: bolder;
+
+    -fx-background-color: -fx-blue-button;
+    -fx-background-radius: 10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+
+    -fx-effect: dropshadow(GAUSSIAN, -fx-shadow-color, 5, 0, 0, 3);
+}
+
+.connect-button:hover, .connect-button:focused{
+    -fx-background-color: -fx-blue-button-active;
+}
+
+.text-area, .text-field {
+    -fx-background-color: -fx-text-box-border, #fff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(GAUSSIAN, -fx-shadow-color, 5, 0, 0, 2);
+    -fx-font-size: 20px;
+}
+
+.text-area:focused, .text-field:focused {
+    -fx-background-color: -fx-white-color, -fx-back-color;
+    -fx-effect: dropshadow(GAUSSIAN, -fx-shadow-color, 3, 0, 0, 2);
+}
+
+.text-area .text-input, .text-field .text-input {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -60%);
+}
+
+.text-area .text-input:focused, .text-field .text-input:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -80%);
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.hyperlink {
+    -fx-text-fill: -fx-hyperlink-color;
+    -fx-font-size: 18px;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.error-text {
+    -fx-fill: -fx-red-color;
+    -fx-font-size: 16px;
+}
+
+.grid-button {
+    -fx-background-color: -fx-white-color;
+    -fx-border-color: -fx-gray-color;
+    -fx-border-width: 1px;
+
+    -fx-font-size: 54px;
+    -fx-font-family: 'Righteous', cursive;
+}
+
+.grid-button:hover {
+    -fx-background-color: derive(-fx-control-inner-background, -10%);
+}
+
+.versus-text {
+    -fx-font-size: 18px;
+}
+
+.your-turn-text {
+    -fx-fill: -fx-blue-color;
+    -fx-font-size: 25px;
+}
+
+.opponent-turn-text {
+    -fx-fill: -fx-gray-color;
+    -fx-font-size: 25px;
+}
+
+.lose-text {
+    -fx-fill: -fx-red-color;
+    -fx-font-size: 25px;
+}
+
+.win-text {
+    -fx-fill: -fx-green-color;
+    -fx-font-size: 25px;
+}
+
+.draw-text {
+    -fx-fill: -fx-orange-color;
+    -fx-font-size: 25px;
+}
+
+.wait-label {
+    -fx-fill: -fx-gray-color;
+    -fx-font-size: 25px;
+}
+
+.back-button {
+    -fx-font-size: 30px;
+    -fx-font-family: 'Righteous', cursive;
+    -fx-text-fill: -fx-white-color;
+    -fx-font-weight: bolder;
+
+    -fx-background-color: -fx-green-button;
+    -fx-background-radius: 10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+
+    -fx-effect: dropshadow(GAUSSIAN, -fx-shadow-color, 5, 0, 0, 3);
+}
+
+.back-button:hover, .back-button:focused{
+    -fx-background-color: -fx-green-button-active;
+}
